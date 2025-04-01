@@ -1,0 +1,220 @@
+ <!doctype html>
+<html lang="en">    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joeboy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:black;
+        }
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #333;
+        }
+        .top-bar-left {
+            display: flex;
+            gap: 10px;
+        }
+        .top-bar-right {
+            display: flex;
+            gap: 10px;
+        }
+        .header {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .site-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .navigation {
+            display: flex;
+            align-items: center;
+        }
+        .menu-icon {
+            font-size: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .login-button {
+            background-color: #b32400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: white;
+            padding: 30px 20px;
+            text-align: left;
+        }
+        .hero-title {
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .search-bar-container {
+            display: flex;
+            margin-top: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        .search-tabs {
+            display: flex;
+        }
+        .search-tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #777;
+            border: none;
+            background-color: transparent;
+            font-weight: bold;
+        }
+        .search-tab.active {
+            color: black;
+            border-bottom: 2px solid #b32400;
+        }
+        .advanced-search-link {
+            color: #000080;
+            text-decoration: underline;
+            padding: 10px 15px;
+        }
+        .search-input-wrapper {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .search-input {
+            flex-grow: 1;
+            border: none;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .search-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+            color: #333;
+        }
+        .image-section {
+            background-color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .image-caption {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .image-navigation {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image-counter {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .nav-arrow {
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .preview-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .preview-images img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span>20:06</span>
+        </div>
+        <div class="top-bar-right">
+            <span>44%</span>
+        </div>
+    </div>
+    <div class="header">
+        <div class="logo">
+
+
+
+
+            <img src=" joeboy.jpg" alt="joeboy.jpg">
+            <span class="site-title"><i>JOEBOY's Clothing line</i></span>
+        </div>
+        <div class="navigation">
+            <span class="menu-icon">&#9776;</span>
+            <button class="login-button"><a href="radiobutton.html">Log in</a></button>
+        </div>
+    </div>
+    <div class="hero">
+        <h1 class="hero-title">Explore the world's <br>best clothing lines in the world history. <br>Visit for more clothes.</h1>
+        <div class="search-bar-container">
+            <div class="search-tabs">
+                <button class="search-tab active">All Content</button>
+                <button class="search-tab active">Images</button>
+            </div>
+            <a href="#" class="advanced-search-link">Advanced Search</a>
+            <div class="search-input-wrapper">
+                <input type="text" class="search-input" placeholder="Search cloths, shoes, bags, and glasses">
+                <button class="search-button">&#128269;</button>
+            </div>
+        </div>
+    </div>
+    <div class="image-section">
+        <p class="joeboy.jpg">Welcome to Joeboy's online clothing line.</p>
+        <div class="image-navigation">
+            <span class="image-counter">Image 1 of 5</span>
+            <button class="nav-arrow">&lt;</button>
+            <button class="nav-arrow">&gt;</button>
+        </div>
+        <img src="Asante.jpg" alt="Ghost Ranch Landscape (Detail)" style="width: 100%; max-width: 800px; display: block; margin: 0 auto 20px;">
+
+        <div class="preview-images">
+            <img src="fifi.jpg" alt="Image 2">
+            <img src="caleb.jpg" alt="Image 3">
+            <img src="gerda.jpg" alt="Image 4">
+            <img src="joel.jpg" alt="Image 5">
+        </div>
+    </div>
+</body>
+</html>
+
+	
